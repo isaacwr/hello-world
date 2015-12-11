@@ -67,13 +67,13 @@ app.post('/sendLocation', function(request, response) {
 app.get('/latest.json', function(request, response) {
 	var loginEntry = request.query.login;
 	if (loginEntry == undefined || loginEntry == null) {
-		response.send("{}");
+		response.send("{undefined or null}");
 	}
 	else {
 		db.collection('checkins', function(error, coll) {
 			coll.find({login:loginEntry}).sort({"created_at":-1}).toArray(function(error, result) {
 				if (result.length < 1) {
-					response.send("{}");
+					response.send("{could not find any}");
 				}
 				else {
 					response.send(result[0]);
