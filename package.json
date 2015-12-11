@@ -1,0 +1,30 @@
+{
+  "name": "hello-world",
+  "version": "0.1.5",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "latest",
+    "express": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "mongodb-uri": "latest",
+    "body-parser": "latest"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaacwr/hello-world"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
